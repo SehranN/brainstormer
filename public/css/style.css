@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #f9b64d;
+}
+
+#main .heading {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 1rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar a:hover {
+  color: var(--primary-color);
+}
+
+/* project Selector */
+
+/* .projectSelector {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectSelector select{
+  width: 150px;
+  height: 50px;
+  padding: 15px;
+} */
+
+
+.projectSelector {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 150px;
+}
+
+.scrollable-select {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  border: none;
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  overflow-y: scroll;
+}
+
+.scrollable-select::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollable-select::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+}
+
+.scrollable-select::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 2px;
+}
+
+.scrollable-select:focus {
+  outline: none;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* li a {text-decoration : none; color : #2d2f31;}
+
+
+
+
+span {
+  padding : 30px;
+  background : #2d2f31; 
+  color : white;
+  font-size : 1.2em;
+  font-variant : small-caps;
+  cursor : pointer;
+  display: block;
+}
+
+span::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+.slide li {padding : 30px;}
+
+#touch {position: absolute; opacity: 0; height: 0px;}    
+
+#touch:checked + .slide {height: 300px;}  */
+
+
+
+
+
+/* Showcase */
+.showcase {
+  height: 450px;
+  width: 100%;
+  background: var(--primary-color);
+}
+
+.showcase h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.showcase form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.showcase form input,
+form select {
+  font-size: 20px;
+  width: 500px;
+  max-width: 500px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+form button {
+  font-size: 20px;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+form button:hover {
+  transform: scale(1.1);
+}
+
+/* Image */
+
+.image {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center items horizontally */
+}
+
+.image-container img {
+  margin: 10px; /* Adjust margin between images */
+  width: calc(50% - 20px); /* Set width to half of the container minus margin */
+  max-width: 500px; /* Set maximum width for images */
+}
+
+
+.msg {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* this id for the word gen section */
+
+.wordGenCont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+}
+
+.wordGenCont h1{
+  padding: 10px;
+}
+
+.wordGenCont form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.wordGenCont form input,
+form select {
+  font-size: 20px;
+  width: 500px;
+  max-width: 500px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.wordGenCont button{
+  font-size: 20px;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.wordGenCont table {
+  border-collapse: collapse;
+  width: 90%;
+}
+
+.wordGenCont td {
+  
+  padding: 8px;
+  text-align: center;
+}
+
+.wordGenCont #wordDisplay{
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+/* style for projects page */
+
+.addCont {
+  width:100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.addCont button {
+  border-radius: 50%;
+  border: none;
+  color: #333;
+  text-decoration: solid;
+  font-size: xx-large;
+  background-color: #f9b64d;
+  width: 60px;
+  height: 60px;
+  padding: 2px;
+  align-self: center;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+#ideaCont{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#ideaCont .project {
+  width: 100%;
+  height: 250px;
+  border: 2px solid #333;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  color: #333;
+  display: block;
+  margin-bottom: 30px;
+}
+
+#ideaCont .project-link{
+  width: 33%;
+  display: block;
+
+  text-decoration: none;
+  color: #333;
+}
+
+#ideaCont .project-link:hover {
+  background-color: #f0f0f0;
+}
+
+/* style for ideas page */
+
+
+#likedWords {
+  padding: 20px;
+}
+
+#likedWords table {
+  border-collapse: collapse; /* Optional: This property ensures that adjacent table cells share borders */
+  width: 100%; /* Optional: Set the width of the table */
+  margin-top: 20px;
+  
+}
+
+#likedWords th, #likedWords td {
+  border: 1px solid #dddddd; /* Set the border style, color, and width for table cells */
+  padding: 8px; /* Optional: Add some padding to the table cells for better spacing */
+  text-align: left; /* Optional: Align the text within the table cells */
+}
+
+#likedWords th {
+  background-color: #f2f2f2; /* Optional: Set a background color for header cells */
+}
+
+#likedWords caption {
+  background-color: #333;
+  color: #fff;
+}
+
+.imageCont {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center items horizontally */
+}
+
+.imageCont img {
+  margin: 10px; /* Adjust margin between images */
+  width: calc(50% - 20px); /* Set width to half of the container minus margin */
+  max-width: 200px; /* Set maximum width for images */
+}
