@@ -5,7 +5,7 @@ const openai = new OpenAI({
 });
 
 // const openai1 = new OpenAI({
-//     apiKey: "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"
+//     apiKey: "key"
 // });
 
 
@@ -103,8 +103,8 @@ const { ImageAnalysisClient } = require('@azure-rest/ai-vision-image-analysis');
 const createClient = require('@azure-rest/ai-vision-image-analysis').default;
 const { AzureKeyCredential } = require('@azure/core-auth');
 
-const endpoint = "https://imagerecon.cognitiveservices.azure.com/";
-const key = "be05d2274dc84f22951c8bcd8e4835b6";
+const endpoint = "endpoint";
+const key = "key";
 
 const credential = new AzureKeyCredential(key);
 const client = createClient(endpoint, credential);
