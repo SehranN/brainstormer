@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> 
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/spinner.css" />
+
+    <script src="js/main.js" defer></script>
+    <title>BrainStormer</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="index.html">
+          <div class="logo">
+            <h2>BrainStormer</h2>
+          </div>
+       </a>
+        
+        <div class="nav-links">
+          <ul>
+            <li>
+              <a href="projects.html" target="_blank"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="https://beta.openai.com/docs" target="_blank"
+                >WordGen</a
+              >
+            </li>
+            <li>
+              <a href="" target="_blank"
+                >ImageGen
+                </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="projectSelector">
+      <h2>Select a Project</h2>
+      <div class="select-wrapper">
+        <select id="projectSelector" class="scrollable-select">
+          <option value="none">Projects</option>
+          <option>+ Add Project</option>
+        </select>
+      </div>
+    </div>
+
+    
+
+    <div id="main">
+      <div class="heading">
+        <h1 id="projectName">Project</h1>
+      </div>
+
+      
+
+      <div class="wordGenCont">
+        <h1>Write down the search domain</h1>
+        <form id="contactForm">
+          
+          <input type="text" id="word" name="word" >
+          
+        </form>
+        <button type="button" onclick="addInput()">Add More Words</button>
+    
+        <button type="button" onClick="wordGen()">Submit</button>
+
+        <div id="wordDisplay">
+          <h3>Images will be generated below</h3>
+        </div>
+      </div>
+
+
+      <section class="image">
+        <div class="image-container">
+          <h2 class="msg"></h2>
+
+          
+        </div>
+      </section>
+    </div>
+
+    <div class="spinner"></div>
+  </body>
+</html>
